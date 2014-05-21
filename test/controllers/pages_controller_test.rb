@@ -18,7 +18,7 @@ class PagesControllerTest < ActionController::TestCase
 
   test "should create page" do
     assert_difference('Page.count') do
-      post :create, page: {  }
+      post :create, page: { page_id: @page.page_id }
     end
 
     assert_redirected_to page_path(assigns(:page))
@@ -35,7 +35,7 @@ class PagesControllerTest < ActionController::TestCase
   end
 
   test "should update page" do
-    patch :update, id: @page, page: {  }
+    patch :update, id: @page, page: { page_id: @page.page_id }
     assert_redirected_to page_path(assigns(:page))
   end
 
