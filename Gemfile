@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'inherited_resources'
+gem 'koala'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -38,4 +39,7 @@ gem 'inherited_resources'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+group :development, :debug, :test do
+  gem 'byebug', require: false
+end
 

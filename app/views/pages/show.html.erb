@@ -1,4 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<%= link_to @page do %>
+  <%= image_tag @page.picture %>
+<% end %>
+<%= link_to @page.name, @page %>
+<ul>
+<% @page.feeds.each do |feed| %>
+<li>
+  <h2><%= feed['from']['name'] %></h2>
+  <%= image_tag feed['picture'] if feed['picture'] %>
+  <%= feed['message']%>
+<% end %>
+</li>
+</ul>
