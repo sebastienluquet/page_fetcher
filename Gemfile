@@ -40,6 +40,12 @@ gem 'koala'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 group :development, :debug, :test do
-  gem 'byebug', require: false
+  gem 'byebug'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'vcr'
+  gem 'webmock'
 end
 

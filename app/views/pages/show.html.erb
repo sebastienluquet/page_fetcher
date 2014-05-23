@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<% if @page.picture %>
 <%= link_to @page do %>
   <%= image_tag @page.picture %>
+<% end %>
 <% end %>
 <%= link_to @page.name, @page %>
 <ul>

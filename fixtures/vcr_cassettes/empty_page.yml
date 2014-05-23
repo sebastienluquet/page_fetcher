@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/?access_token=CAAFCKzF75OsBAM2px6NvOPP31K4GkdjC4dUVnzDvoLVEVGo7gCeBOEZCc9dfRoTXHUZBnlIeTSCCdgSJZC1sIWoJIAQ27HbFpfwN1DdrBWlZBbingCBNnfentSQwe2JQZCmP4NsW1FgDN16S2GFXLAMRiqpPhgrWMEHyixTQbtjBjZA2o9jPSTZCrKn4ZBaGDQ0ZD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Www-Authenticate:
+      - OAuth "Facebook Platform" "invalid_request" "Unsupported get request."
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1260602'
+      Cache-Control:
+      - no-store
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - qWznaKm4dkOgDEpTR6M4B/yGmt2n0wZ4dzyQA2hvDWM=
+      Date:
+      - Fri, 23 May 2014 04:45:30 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '89'
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"Unsupported get request.","type":"GraphMethodException","code":100}}'
+    http_version: 
+  recorded_at: Fri, 23 May 2014 04:45:30 GMT
+recorded_with: VCR 2.8.0

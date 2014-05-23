@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/275210472538154?access_token=CAAFCKzF75OsBAM2px6NvOPP31K4GkdjC4dUVnzDvoLVEVGo7gCeBOEZCc9dfRoTXHUZBnlIeTSCCdgSJZC1sIWoJIAQ27HbFpfwN1DdrBWlZBbingCBNnfentSQwe2JQZCmP4NsW1FgDN16S2GFXLAMRiqpPhgrWMEHyixTQbtjBjZA2o9jPSTZCrKn4ZBaGDQ0ZD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"cf73dfd32d1a43b403506b3c75ee77a8d437bdc7"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1260602'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - HpWlzmBmEyBXmOur7mKhJeEmZh4qO5qv6dhAEUJBM6o=
+      Date:
+      - Fri, 23 May 2014 04:47:10 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '502'
+    body:
+      encoding: UTF-8
+      string: '{"id":"275210472538154","can_post":true,"category":"Monarch","checkins":0,"has_added_app":true,"is_community_page":false,"is_published":false,"new_like_count":0,"likes":0,"link":"https:\/\/www.facebook.com\/Dimelo.Test","name":"Sebaslien
+        Luxet","offer_eligible":false,"promotion_eligible":false,"promotion_ineligible_reason":"BOOSTED_POST__PAGE_NOT_PUBLISHED","talking_about_count":0,"unread_message_count":0,"unread_notif_count":0,"unseen_message_count":0,"username":"Dimelo.Test","were_here_count":0}'
+    http_version: 
+  recorded_at: Fri, 23 May 2014 04:47:10 GMT
+recorded_with: VCR 2.8.0
